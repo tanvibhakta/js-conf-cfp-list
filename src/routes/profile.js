@@ -1,5 +1,11 @@
-import { h, Component } from 'preact';
-import style from './style';
+import { Component } from 'preact';
+import styled from "styled-components";
+
+const ProfileContainer = styled.div`
+ padding: 56px 20px;
+ min-height: 100%;
+ width: 100%;
+`
 
 export default class Profile extends Component {
 	state = {
@@ -30,7 +36,7 @@ export default class Profile extends Component {
 	// Note: `user` comes from the URL, courtesy of our router
 	render({ user }, { time, count }) {
 		return (
-			<div class={style.profile}>
+			<ProfileContainer>
 				<h1>Profile: {user}</h1>
 				<p>This is the user profile for a user named { user }.</p>
 
@@ -41,7 +47,7 @@ export default class Profile extends Component {
 					{' '}
 					Clicked {count} times.
 				</p>
-			</div>
+			</ProfileContainer>
 		);
 	}
 }

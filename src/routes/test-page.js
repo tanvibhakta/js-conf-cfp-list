@@ -9,6 +9,7 @@ const Button = styled.button`
   margin: 0.5em 1em;
   padding: 0.25em 1em;
 
+
   ${props => props.primary && css`
     background: palevioletred;
     color: white;
@@ -19,7 +20,7 @@ const Container = styled.div`
   text-align: center;
 `;
 
-export default function StyledComp() {
+export default function TestPage() {
 	return (
 		<Container>
 			<Button>Normal Button</Button>
