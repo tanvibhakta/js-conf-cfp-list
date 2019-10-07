@@ -6,6 +6,7 @@ import Header from './header';
 // Code-splitting is automated for routes
 import Home from '../routes/home';
 import Profile from '../routes/profile';
+import TestPage from '../routes/test-page';
 
 export default class App extends Component {
 	
@@ -25,6 +26,7 @@ export default class App extends Component {
 					<Home path="/" />
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />
+					<TestPage path="/test-page"/>
 				</Router>
 			</div>
 		);
