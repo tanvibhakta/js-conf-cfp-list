@@ -1,0 +1,19 @@
+{
+    "conferences": [
+        {
+            "name": "asdf",
+            "website": "example.org",
+            "location": {
+                "city": "",
+                "country": ""
+            },
+            "dateStart": "YYYY-MM-DD",
+            "dateEnd": "YYYY-MM-DD",
+            "cfp": {
+                "dateStart": "YYYY-MM-DD",
+                "dateEnd": "YYYY-MM-DD",
+                "cfpWebsite": "example.org"
+            }
+        }
+    ]
+}
