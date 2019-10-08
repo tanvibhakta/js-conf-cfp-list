@@ -8,7 +8,7 @@ import theme from "../styled/theme";
 import Header from './components/Header';
 
 // Code-splitting is automated for routes
-import Home from './routes/home';
+import Home from './routes';
 import Profile from './routes/profile';
 import TestPage from './routes/test-page.js';
 

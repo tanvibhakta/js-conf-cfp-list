@@ -3,6 +3,7 @@ import styled from "styled-components";
 import LinkButton from './LinkButton'
 
 const HeaderContainer = styled.header`
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
