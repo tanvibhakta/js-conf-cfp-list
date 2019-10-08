@@ -2,11 +2,10 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
 import {ThemeProvider} from 'styled-components';
-
 import GlobalStyle from "../styled/GlobalStyles";
 import theme from "../styled/theme";
 
-import Header from './components/header';
+import Header from './components/Header';
 
 // Code-splitting is automated for routes
 import Home from './routes/home';
