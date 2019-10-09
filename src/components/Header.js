@@ -21,7 +21,7 @@ const Header = () => (
     <HeaderContainer>
         <h1>JS Conferences List</h1>
         <nav>
-            <LinkButton href="/upcoming">Upcoming</LinkButton>
+            <LinkButton href="/">Upcoming</LinkButton>
             <LinkButton href="/past">Past</LinkButton>
             <LinkButton href="https://github.com/tanvibhakta/js-conf-cfp-list">Add</LinkButton>
         </nav>
