@@ -8,7 +8,7 @@ import theme from "../styled/theme";
 import Header from './components/Header';
 
 // Code-splitting is automated for routes
-import Home from './routes';
+import Home from './routes/home';
 
 export default class App extends Component {
 
