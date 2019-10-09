@@ -9,8 +9,6 @@ import Header from './components/Header';
 
 // Code-splitting is automated for routes
 import Home from './routes';
-import Profile from './routes/profile';
-import TestPage from './routes/test-page.js';
 
 export default class App extends Component {
 
@@ -30,9 +28,6 @@ export default class App extends Component {
                     <Header />
                     <Router onChange={this.handleRoute}>
                         <Home path="/" />
-                        <Profile path="/profile/" user="me" />
-                        <Profile path="/profile/:user" />
-                        <TestPage path="/test-page"/>
                     </Router>
                 </div>
             </ThemeProvider>
