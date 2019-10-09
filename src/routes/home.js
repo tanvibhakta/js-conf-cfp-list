@@ -4,8 +4,8 @@ import List from "../components/List";
 const HomeContainer = styled.div`
 `
 
-const Home = ({route}) => {
-	let chronologyType = route === "/" ? "/upcoming" : route;
+const Home = ({path}) => {
+	let chronologyType = path === "/" ? "/upcoming" : path;
 	chronologyType = chronologyType.replace("/", "");
 
 	return (
