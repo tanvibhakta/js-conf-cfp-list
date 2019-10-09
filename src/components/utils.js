@@ -16,3 +16,17 @@ export const dynamicSort = (property) => {
 export const getDisplayDate = (dateString) => {
     return new Date(dateString).toLocaleDateString(undefined, {year: 'numeric', month: 'long', day: 'numeric'});
 }
+
+export const filterConferencesChronologically = (property) => {
+    return function (conference) {
+        let today = new Date().toISOString();
+        switch(property) {
+            case "upcoming":
+                return conference.dateEnd > today;
+                break;
+            case "past":
+                return conference.dateEnd < today;
+                break;
+        }
+    }
+}
