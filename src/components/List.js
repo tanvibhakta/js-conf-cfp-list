@@ -2,7 +2,7 @@ import styled from "styled-components";
 import ConferenceData from "../conferences.json"
 import ListItem from "./ListItem";
 
-const ListContainer = styled.div`
+const ListContainer = styled.ul`
  `
 
 const List = () => (
@@ -12,5 +12,14 @@ const List = () => (
         }
     </ListContainer>
 );
+const List = ({chronologyType}) => {
+    return (
+        <ListContainer>
+            {
+                ConferenceData.conferences.map(conference => <ListItem {...conference}></ListItem>)
+            }
+        </ListContainer>
+    );
+}
 
 export default List;

@@ -4,10 +4,13 @@ import List from "../components/List";
 const HomeContainer = styled.div`
 `
 
-const Home = () => {
+const Home = ({route}) => {
+	let chronologyType = route === "/" ? "/upcoming" : route;
+	chronologyType = chronologyType.replace("/", "");
+
 	return (
 		<HomeContainer>
-			<List />
+			<List chronologyType={chronologyType}/>
 		</HomeContainer>
 	);
 }

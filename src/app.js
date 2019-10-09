@@ -28,6 +28,7 @@ export default class App extends Component {
                     <Header />
                     <Router onChange={this.handleRoute}>
                         <Home path="/" />
+                        <Home path="/past" />
                     </Router>
                 </div>
             </ThemeProvider>
