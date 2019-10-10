@@ -39,6 +39,19 @@ const ListItemContainer = styled.li`
         margin-top: 0.125rem;
     }
     
+    @media (min-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        
+        .name {
+            align-self: baseline;
+        }
+        
+        .name, .date, .location {
+            margin-right: 0.5rem;
+        }
+
     }
  `
 
