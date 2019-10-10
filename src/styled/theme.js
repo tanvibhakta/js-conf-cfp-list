@@ -1,5 +1,5 @@
 const theme = {
- maxContainerSize: "1440px"
+ maxContainerSize: "800px",
  fontSizes: {
   small: '0.875rem',
   medium: '1rem',
