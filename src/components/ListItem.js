@@ -1,7 +1,45 @@
 import styled from "styled-components";
 import LinkButton from "./LinkButton";
 import {getDisplayDate} from "./utils";
+
 const ListItemContainer = styled.li`
+    display: grid;
+    grid-template-areas: 
+        "date"
+        "name"
+        "location"
+        "link-button";
+    padding-bottom: 1rem;
+    
+    .date {
+        grid-area: date;
+        font-weight: 300;
+        line-height: 1;
+        font-size: ${props => props.theme.fontSizes.small};
+        text-transform: uppercase;
+    }
+
+    .name {
+        grid-area: name;
+        font-weight: 500;
+        align-self: center;
+        font-size: ${props => props.theme.fontSizes.large};
+    }
+    
+    .location {
+        grid-area: location;
+        line-height: 1;
+        font-size: ${props => props.theme.fontSizes.medium};
+        text-transform: capitalize;
+    }
+    
+    .link-button {
+        grid-area: link-button;
+        font-size: ${props => props.theme.fontSizes.medium};
+        margin-top: 0.125rem;
+    }
+    
+    }
  `
 
 const ListItem = (props) => {
@@ -27,10 +65,10 @@ const ListItem = (props) => {
         }
     }
 
-    return (<ListItemContainer>
-        <span>{getDisplayDate(props.dateStart)}</span>
-        <a href={props.website}>{props.name}</a>
-        <span>{props.location.city}, {props.location.country}</span>
+    return (<ListItemContainer {...props}>
+        <div className="date">{getDisplayDate(props.dateStart)}</div>
+        <a className="name" href={props.website}>{props.name}</a>
+        <div className="location">{props.location.city}, {props.location.country}</div>
         {badge.type ? (<LinkButton type={badge.type} href={badge.href}>{badge.text}</LinkButton>) : null}
     </ListItemContainer> )
 };
