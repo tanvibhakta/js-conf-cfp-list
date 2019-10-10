@@ -2,8 +2,8 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
 import {ThemeProvider} from 'styled-components';
-import GlobalStyle from "../styled/GlobalStyles";
-import theme from "../styled/theme";
+import GlobalStyle from "./styled/GlobalStyles";
+import theme from "./styled/theme";
 
 import Header from './components/Header';
 
