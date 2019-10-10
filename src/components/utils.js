@@ -14,7 +14,7 @@ export const dynamicSort = (property) => {
 }
 
 export const getDisplayDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString(undefined, {year: 'numeric', month: 'long', day: 'numeric'});
+    return new Date(dateString).toLocaleDateString(undefined, {year: 'numeric', month: 'short', day: '2-digit'});
 }
 
 export const filterConferencesChronologically = (property) => {
