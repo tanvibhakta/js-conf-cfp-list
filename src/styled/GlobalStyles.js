@@ -24,9 +24,11 @@ const GlobalStyle = createGlobalStyle`
   max-width: ${props => props.theme.maxContainerSize};
   margin: auto;
   padding: 0 2rem;
-  
-  color: red;
-  }
+    }
+    
+    a {
+    text-decoration: none;
+    }
 `
 
 export default GlobalStyle;
