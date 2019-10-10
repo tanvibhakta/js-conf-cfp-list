@@ -24,6 +24,7 @@ const ListItemContainer = styled.li`
         font-weight: 500;
         align-self: center;
         font-size: ${props => props.theme.fontSizes.large};
+        display: inline-block;
     }
     
     .location {
