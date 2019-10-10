@@ -4,6 +4,7 @@ import ListItem from "./ListItem";
 import {dynamicSort, filterConferencesChronologically} from "./utils";
 
 const ListContainer = styled.ul`
+all: unset;
  `
 
 const List = ({chronologyType}) => {
