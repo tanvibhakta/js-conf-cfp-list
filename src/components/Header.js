@@ -3,18 +3,27 @@ import styled from "styled-components";
 import LinkButton from './LinkButton'
 
 const HeaderContainer = styled.header`
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 2rem;
 
-   nav {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-self: end;
-    grid-gap: 1rem;
-
-   }
+    h1 {
+        margin: 0;
+        padding-top: 1.5rem;
+    }
+    
+    nav {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: start;
+        justify-self: end;
+        grid-gap: 1rem;
+        width: 100%;
+    }
  `
 
 const Header = () => (
