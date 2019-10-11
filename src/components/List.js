@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ConferenceData from "../conferences.json"
+import ConferenceData from "../data/conferences.json"
 import ListItem from "./ListItem";
 import {dynamicSort, filterConferencesChronologically} from "./utils";
 
