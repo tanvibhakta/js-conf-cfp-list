@@ -9,7 +9,7 @@ const ListItemContainer = styled.li`
         "name"
         "location"
         "link-button";
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     
     .date {
         grid-area: date;
@@ -44,7 +44,8 @@ const ListItemContainer = styled.li`
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        
+        padding-bottom: 1rem;
+
         .name {
             align-self: baseline;
         }
